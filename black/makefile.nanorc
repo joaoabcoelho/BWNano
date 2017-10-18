@@ -1,0 +1,17 @@
+## Here is an example for Makefiles.
+
+syntax "makefile" "Makefile[^/]*$" "\.(make|mk)$"
+
+#color brightred "[:=]"
+#color brightgreen "[:=]"
+color brightmagenta "\<(if|ifeq|else|endif)\>"
+color brightgreen "\$+[{(][a-zA-Z0-9_-]+[})]"
+color brightyellow "^[^ 	]+:"
+#color brightgreen "#.*$"
+color brightred "#.*$"
+
+## Trailing whitespace.
+color ,green "[[:space:]]+$"
+
+##Srtings
+color brightcyan ""(\\.|[^"])*"" "'(\\.|[^'])*'"

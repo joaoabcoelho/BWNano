@@ -1,0 +1,17 @@
+## Here is an example for Bourne shell scripts.
+##
+syntax "sh" "\.(sh|bashrc|profile)$"
+#icolor green "^[0-9A-Z_]+\(\)"
+color brightmagenta "\<(case|do|done|elif|else|esac|exit|fi|for|function|if|in|local|read|return|select|shift|then|time|until|while)\>"
+#color yellow "(\{|\}|\(|\)|\;|\]|\[|`|\\|\$|<|>|!|=|&|\|)"
+color brightyellow "(`|\\|\$|&|\|)"
+#color green "-[Ldefgruwx]\>"
+color brightyellow "-(eq|ne|gt|lt|ge|le|s|n|z)\>"
+color cyan "\<(cat|cd|chmod|chown|cp|echo|env|export|grep|install|let|ln|make|mkdir|mv|rm|sed|set|tar|touch|umask|unset|eval)\>"
+icolor brightgreen "\$\{?[0-9A-Z_!@#$*?-]+\}?"
+
+## Comments
+color brightred "(^|[[:space:]])#.*$"
+
+##Srtings
+color brightcyan ""(\\.|[^"])*"" "'(\\.|[^'])*'"
