@@ -3,12 +3,15 @@
 syntax "makefile" "Makefile[^/]*$" "\.(make|mk)$"
 
 #color red "[:=]"
-color green "[:=]"
+#color green "[:=]"
 color magenta "\<(if|ifeq|else|endif)\>"
-color blue "\$+[{(][a-zA-Z0-9_-]+[})]"
-color brightblue "^[^ 	]+:"
+color green "\$+[{(][a-zA-Z0-9_-]+[})]"
+color blue "^[^ 	]+:"
 #color green "#.*$"
 color red "#.*$"
 
 ## Trailing whitespace.
 color ,green "[[:space:]]+$"
+
+##Srtings
+color cyan ""(\\.|[^"])*"" "'(\\.|[^'])*'"
