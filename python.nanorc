@@ -7,6 +7,6 @@ color brightgreen "\<(del|except|try)\>"
 color brightyellow "\<(break|continue|return)\>"
 color brightcyan "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
 color brightcyan "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
-color brightred start=""""[^"]" end=""""" start="'''[^']" end="'''"
+color brightred start=""""" end=""""" start="'''" end="'''"
 color brightred "#.*$"
 

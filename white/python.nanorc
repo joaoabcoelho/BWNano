@@ -7,6 +7,6 @@ color green "\<(del|except|try)\>"
 color yellow "\<(break|continue|return)\>"
 color cyan "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
 color cyan "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
-color red start=""""[^"]" end=""""" start="'''[^']" end="'''"
+color red start=""""" end=""""" start="'''" end="'''"
 color red "#.*$"
 
