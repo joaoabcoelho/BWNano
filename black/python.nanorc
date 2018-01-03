@@ -1,12 +1,15 @@
 ## Here is an example for Python.
 ##
 syntax "python" "\.py$"
-icolor brightgreen "def [0-9A-Z_]+"
-color brightmagenta "\<(and|assert|class|def|elif|else|exec|finally|for|from|global|if|import|in|is|lambda|map|not|or|pass|print|raise|while)\>"
-color brightgreen "\<(del|except|try)\>"
-color brightyellow "\<(break|continue|return)\>"
-color brightcyan "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
-color brightcyan "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
-color brightred start=""""([^"]|$)" end=""""" start="'''([^']|$)" end="'''"
-color brightred "#.*$"
+color brightred "(&|\||!|\+|-|/|\*|=|:|>|<|~)"
+color brightblue "\b[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\b"
+icolor brightgreen "(def|class) [0-9A-Z_]+"
+color brightred "\<(from|import|not|in|is|and|or)\>"
+color brightcyan "\<(assert|class|def|elif|else|exec|finally|for|global|if|lambda|map|pass|print|raise|while|as)\>"
+color brightmagenta "\<(del|except|try)\>"
+color brightmagenta "\<(break|continue|return)\>"
+color brightyellow "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
+color brightyellow "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
+color brightblack start=""""([^"]|$)" end=""""" start="'''([^']|$)" end="'''"
+color brightblack "#.*$"
 
