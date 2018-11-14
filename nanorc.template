@@ -216,11 +216,11 @@
 
 ## Nanorc files
 # include "/usr/share/nano/nanorc.nanorc"
- include "~/Software/BWNano/nanorc.nanorc"
+ include "<MyBWNano>/nanorc.nanorc"
 
 ## C/C++
 # include "/usr/share/nano/c.nanorc"
- include "~/Software/BWNano/c.nanorc"
+ include "<MyBWNano>/c.nanorc"
 # include "~/Nano/c.nanorc"
 
 ## HTML
@@ -246,7 +246,7 @@
 
 ## Python
 # include "/usr/share/nano/python.nanorc"
- include "~/Software/BWNano/python.nanorc"
+ include "<MyBWNano>/python.nanorc"
 
 ## Ruby
 # include "/usr/share/nano/ruby.nanorc"
@@ -259,8 +259,11 @@
 
 ## Bourne shell scripts
 # include "/usr/share/nano/sh.nanorc"
- include "~/Software/BWNano/sh.nanorc"
+ include "<MyBWNano>/sh.nanorc"
 
 ## Makefile
 # include "/usr/share/nano/makefile.nanorc"
- include "~/Software/BWNano/makefile.nanorc"
+ include "<MyBWNano>/makefile.nanorc"
+
+## Dockerfile
+ include "<MyBWNano>/dockerfile.nanorc"
