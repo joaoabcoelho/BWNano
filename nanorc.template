@@ -267,3 +267,6 @@
 
 ## Dockerfile
  include "<MyBWNano>/dockerfile.nanorc"
+
+## Json
+ include "<MyBWNano>/json.nanorc"

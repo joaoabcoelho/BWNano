@@ -20,9 +20,9 @@ fi
 
 cp $BWNANO/nanorc.template $BWNANO/nanorc.copy
 
-sed -i "s#<MyBWNano>#$BWNANO#g" nanorc.copy
+sed -i "s#<MyBWNano>#$BWNANO#g" $BWNANO/nanorc.copy
 
-mv nanorc.copy ~/.nanorc
+mv $BWNANO/nanorc.copy ~/.nanorc
 
 echo "New nanorc file created at ~/.nanorc"
 echo "You are good to go!"
